@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS schema_migrations(version integer PRIMARY KEY,applied_at bigint NOT NULL);
+CREATE TABLE IF NOT EXISTS regions(id text PRIMARY KEY,name text NOT NULL);
+CREATE TABLE IF NOT EXISTS assets(id text PRIMARY KEY,name text NOT NULL,type text NOT NULL,region text NOT NULL REFERENCES regions(id),longitude double precision NOT NULL,latitude double precision NOT NULL,height double precision NOT NULL,voltage double precision NOT NULL,capacity double precision NOT NULL,status text NOT NULL);
+CREATE TABLE IF NOT EXISTS power_lines(id text PRIMARY KEY,name text NOT NULL,from_id text NOT NULL REFERENCES assets(id) ON DELETE RESTRICT,to_id text NOT NULL REFERENCES assets(id) ON DELETE RESTRICT,voltage double precision NOT NULL,status text NOT NULL,load double precision NOT NULL,CHECK(from_id<>to_id));
+CREATE TABLE IF NOT EXISTS telemetry(tick integer PRIMARY KEY,timestamp bigint NOT NULL,document jsonb NOT NULL);
+CREATE INDEX IF NOT EXISTS telemetry_timestamp ON telemetry(timestamp);
+CREATE TABLE IF NOT EXISTS alarms(id text PRIMARY KEY,asset_id text NOT NULL,timestamp bigint NOT NULL,status text NOT NULL,acknowledged_at bigint,note text,document jsonb NOT NULL);
+CREATE TABLE IF NOT EXISTS app_state(key text PRIMARY KEY,value jsonb NOT NULL);
+CREATE TABLE IF NOT EXISTS audit_log(id bigserial PRIMARY KEY,action text NOT NULL,entity_id text NOT NULL,timestamp bigint NOT NULL,details text NOT NULL);
+CREATE TABLE IF NOT EXISTS users(id text PRIMARY KEY,username text UNIQUE NOT NULL,password_hash text NOT NULL,role text NOT NULL CHECK(role IN ('admin','operator','viewer')));
+CREATE TABLE IF NOT EXISTS sessions(token_hash text PRIMARY KEY,user_id text REFERENCES users(id),expires_at bigint NOT NULL);
+CREATE TABLE IF NOT EXISTS protection_events(id text PRIMARY KEY,name text NOT NULL,level text NOT NULL,status text NOT NULL,starts_at bigint NOT NULL,ends_at bigint NOT NULL,plan text NOT NULL);
+CREATE TABLE IF NOT EXISTS protected_assets(event_id text REFERENCES protection_events(id) ON DELETE CASCADE,asset_id text REFERENCES assets(id) ON DELETE RESTRICT,PRIMARY KEY(event_id,asset_id));
+CREATE TABLE IF NOT EXISTS work_orders(id text PRIMARY KEY,alarm_id text REFERENCES alarms(id),asset_id text NOT NULL REFERENCES assets(id),event_id text REFERENCES protection_events(id),title text NOT NULL,assignee text NOT NULL,status text NOT NULL,feedback text NOT NULL DEFAULT '',created_at bigint NOT NULL,updated_at bigint NOT NULL);
+CREATE TABLE IF NOT EXISTS scenes(id text PRIMARY KEY,name text NOT NULL,mode text NOT NULL,configuration jsonb NOT NULL,revision integer NOT NULL DEFAULT 1);
+CREATE TABLE IF NOT EXISTS asset_model_bindings(asset_id text PRIMARY KEY REFERENCES assets(id) ON DELETE CASCADE,model_uri text NOT NULL);
+CREATE TABLE IF NOT EXISTS measurement_points(id text PRIMARY KEY,asset_id text REFERENCES assets(id) ON DELETE CASCADE,name text NOT NULL,unit text NOT NULL,quality text NOT NULL DEFAULT 'simulated');

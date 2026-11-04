@@ -1,0 +1,2205 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>全景智慧电力保障系统｜对话与关键帧归档</title><style>
+:root{--bg:#071424;--paper:#0e2035;--border:#284258;--text:#e3edf7;--muted:#93aac0;--accent:#3dd8cf}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif;line-height:1.78}a{color:#68d5ff}header{padding:70px max(30px,calc((100% - 1160px)/2));background:radial-gradient(circle at 75% 5%,#195677,#091627 70%);border-bottom:1px solid var(--border)}.tag{color:var(--accent);letter-spacing:.22em;font-size:12px}h1{font-size:clamp(28px,4vw,48px);margin:12px 0}h2{margin-top:36px;color:#c2f8f1}h3{margin-top:27px;color:#98dcf5}.lead{color:var(--muted)}.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:235px minmax(0,1fr);gap:28px;padding:32px 24px}aside{position:sticky;top:18px;align-self:start;background:#0d2032;border:1px solid var(--border);border-radius:14px;padding:16px}aside a{display:block;padding:10px 6px;border-radius:6px;text-decoration:none;font-size:13px;color:#b5c9de}aside a:hover{background:#17384d}main{min-width:0}article,.panel{background:var(--paper);border:1px solid var(--border);border-radius:14px;padding:clamp(16px,3vw,38px);margin-bottom:24px}.role{font-size:12px;color:#86dfd6;letter-spacing:.14em;font-weight:bold}.user{padding:14px 18px;border-left:3px solid #48c6e9;background:#102c42;white-space:pre-wrap;margin:16px 0 24px;border-radius:4px}.assistant{overflow-wrap:anywhere}pre{overflow:auto;background:#06121e;border:1px solid #244155;padding:14px;border-radius:9px;font-size:12px;line-height:1.55}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}p code,td code{background:#19354b;border-radius:4px;padding:1px 5px}table{width:100%;border-collapse:collapse;display:block;overflow:auto;font-size:13px}td,th{border:1px solid #2b455a;padding:8px 12px;min-width:85px;vertical-align:top}th{background:#14344c}blockquote{border-left:3px solid var(--accent);padding:4px 15px;background:#112b3c}.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.frame{margin:0;background:#102438;border:1px solid var(--border);border-radius:10px;overflow:hidden}.frame img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.frame figcaption{padding:9px 12px;color:#b2cede;font-size:12px}.note{padding:12px 16px;background:#1e3140;color:#deca93;border-radius:8px;font-size:13px}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.links a{padding:8px 16px;text-decoration:none;border:1px solid #3e8499;border-radius:8px}.diagram{padding:12px;border:1px dashed #376778;border-radius:9px}.diagram-title{font-size:12px;color:#80dfd5}.foot{color:#7c9ab2;padding:28px;text-align:center;font-size:12px}@media(max-width:750px){.wrap{display:block}aside{position:static;margin-bottom:20px}header{padding:42px 24px}}
+</style></head><body><header><div class="tag">DIGITAL TWIN · CONVERSATION ARCHIVE</div><h1>全景智慧电力保障系统</h1><div class="lead">上海进博会三维场景复刻 · 需求分析 · 方案 B 系统架构 · 开发实施规划</div><div class="links"><a href="documents/三维前端复刻需求文档.html">打开原始复刻需求文档</a><a href="#frames">查看17张视频关键帧</a><a href="#dialogue">阅读对话记录</a></div></header><div class="wrap"><aside><strong>目录</strong><a href="#intro">归档说明</a><a href="#frames">视频关键帧</a><a href="#dialogue">对话记录</a><a href="#turn01">第 01 轮 · 分析全景智慧电力保障系统</a><a href="#turn02">第 02 轮 · 前端三维园区场景 建设，复刻这个</a><a href="#turn03">第 03 轮 · 分析全景智慧电力保障系统, 架构</a><a href="#turn04">第 04 轮 · 按照方案 B：可运营 MVP（推</a><a href="#files">文件目录</a></aside><main><section class="panel" id="intro"><h2>归档说明</h2><p>本归档来自当前可见项目会话与已上传文件。第 04 轮技术架构采用保存的完整原文并转换为离线可阅读格式；前 01–03 轮的助手内容为基于当前对话记录的结构化复述，非逐字导出。用户提问按当前可见文本保存。</p><p>17 张关键帧来自用户上传的《02_上海进博会电力(1).mp4》；压缩包不包含体积较大的源视频。原需求 HTML 已改为使用同包本地图片，离线打开即可查看。</p><p class="note">原聊天中的异步搜索示意配图不属于视频原始画面，无法保证逐张获取，故没有将其冒充为真实截图；视频关键帧已全部单独归档。</p></section><section class="panel" id="frames"><h2>视频关键帧 · 17 张</h2><div class="frames"><figure class="frame"><a href="images/关键帧_01.jpg"><img loading="lazy" src="images/关键帧_01.jpg" alt="视频 0 秒：国家会展中心重点保电"></a><figcaption>视频 0 秒：国家会展中心重点保电</figcaption></figure><figure class="frame"><a href="images/关键帧_02.jpg"><img loading="lazy" src="images/关键帧_02.jpg" alt="视频 4 秒：电网线路拓扑"></a><figcaption>视频 4 秒：电网线路拓扑</figcaption></figure><figure class="frame"><a href="images/关键帧_03.jpg"><img loading="lazy" src="images/关键帧_03.jpg" alt="视频 6 秒：场馆供电设施近景"></a><figcaption>视频 6 秒：场馆供电设施近景</figcaption></figure><figure class="frame"><a href="images/关键帧_04.jpg"><img loading="lazy" src="images/关键帧_04.jpg" alt="视频 12 秒：全景运行态势"></a><figcaption>视频 12 秒：全景运行态势</figcaption></figure><figure class="frame"><a href="images/关键帧_05.jpg"><img loading="lazy" src="images/关键帧_05.jpg" alt="视频 18 秒：区域监测与统计"></a><figcaption>视频 18 秒：区域监测与统计</figcaption></figure><figure class="frame"><a href="images/关键帧_06.jpg"><img loading="lazy" src="images/关键帧_06.jpg" alt="视频 24 秒：重点线路高亮"></a><figcaption>视频 24 秒：重点线路高亮</figcaption></figure><figure class="frame"><a href="images/关键帧_07.jpg"><img loading="lazy" src="images/关键帧_07.jpg" alt="视频 30 秒：保障区域轮廓"></a><figcaption>视频 30 秒：保障区域轮廓</figcaption></figure><figure class="frame"><a href="images/关键帧_08.jpg"><img loading="lazy" src="images/关键帧_08.jpg" alt="视频 36 秒：重点保障对象分布"></a><figcaption>视频 36 秒：重点保障对象分布</figcaption></figure><figure class="frame"><a href="images/关键帧_09.jpg"><img loading="lazy" src="images/关键帧_09.jpg" alt="视频 42 秒：区域风险和线路"></a><figcaption>视频 42 秒：区域风险和线路</figcaption></figure><figure class="frame"><a href="images/关键帧_10.jpg"><img loading="lazy" src="images/关键帧_10.jpg" alt="视频 44 秒：供电单线图联动"></a><figcaption>视频 44 秒：供电单线图联动</figcaption></figure><figure class="frame"><a href="images/关键帧_11.jpg"><img loading="lazy" src="images/关键帧_11.jpg" alt="视频 50 秒：场馆保电视角"></a><figcaption>视频 50 秒：场馆保电视角</figcaption></figure><figure class="frame"><a href="images/关键帧_12.jpg"><img loading="lazy" src="images/关键帧_12.jpg" alt="视频 54 秒：配电设备下钻"></a><figcaption>视频 54 秒：配电设备下钻</figcaption></figure><figure class="frame"><a href="images/关键帧_13.jpg"><img loading="lazy" src="images/关键帧_13.jpg" alt="视频 62 秒：城市电网异常图层"></a><figcaption>视频 62 秒：城市电网异常图层</figcaption></figure><figure class="frame"><a href="images/关键帧_14.jpg"><img loading="lazy" src="images/关键帧_14.jpg" alt="视频 72 秒：跨区域供电展示"></a><figcaption>视频 72 秒：跨区域供电展示</figcaption></figure><figure class="frame"><a href="images/关键帧_15.jpg"><img loading="lazy" src="images/关键帧_15.jpg" alt="视频 76 秒：设备三维剖视"></a><figcaption>视频 76 秒：设备三维剖视</figcaption></figure><figure class="frame"><a href="images/关键帧_16.jpg"><img loading="lazy" src="images/关键帧_16.jpg" alt="视频 82 秒：场馆聚焦回放"></a><figcaption>视频 82 秒：场馆聚焦回放</figcaption></figure><figure class="frame"><a href="images/关键帧_17.jpg"><img loading="lazy" src="images/关键帧_17.jpg" alt="视频 88 秒：回到全景数据视图"></a><figcaption>视频 88 秒：回到全景数据视图</figcaption></figure></div></section><div id="dialogue"></div><article id="turn01"><div class="role">USER · 第 01 轮</div><div class="user">分析全景智慧电力保障系统</div><div class="role">ASSISTANT</div><div class="assistant"><h3>一、项目定位</h3>
+<p>系统定位为智慧电网 / 数字孪生 / GIS 三维可视化 / 应急指挥平台，面向电网调度、保电与运维。核心应用包括城市运行态势、重点场馆保电、站所监测、故障预警、抢修指挥。</p>
+<h3>二、推荐的业务模块</h3>
+<table>
+<thead>
+<tr>
+  <th>模块</th>
+  <th>主要内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>电网全景</td>
+  <td>城市建筑、电力设施、线路和负荷态势</td>
+</tr>
+<tr>
+  <td>供电拓扑</td>
+  <td>上下游关联、供电路径、线路高亮</td>
+</tr>
+<tr>
+  <td>重点保电</td>
+  <td>场馆、园区、重要用户、重点保障区域</td>
+</tr>
+<tr>
+  <td>设备监控</td>
+  <td>变电站、配电柜、监测参数、三维设备</td>
+</tr>
+<tr>
+  <td>故障处置</td>
+  <td>告警、三维定位、任务与工单</td>
+</tr>
+</tbody>
+</table>
+<h3>三、三维空间层级</h3>
+<p>城市全景 → 园区保障网络 → 变电站 / 配电房 → 电气设备 → 监测 / 业务数据。</p>
+<h3>四、技术方向</h3>
+<p>React + TypeScript，CesiumJS，Three.js / R3F，ECharts，WebSocket，Node.js / NestJS，PostgreSQL / PostGIS。优先使用模拟数据完成端到端交互。</p>
+<p><strong>说明：</strong> 本节是前序回复的结构化复述，不是逐字导出。</p>
+</div></article><article id="turn02"><div class="role">USER · 第 02 轮</div><div class="user">前端三维园区场景 建设，复刻这个系统
+
+提取关键帧，写出详细的项目需求文档html</div><div class="role">ASSISTANT</div><div class="assistant"><h3>交付结果</h3>
+<p>对上传的 94 秒《02_上海进博会电力(1).mp4》提取了 17 张关键帧并生成《三维前端复刻需求文档.html》。分析内容包括原视频证据、页面布局、三维场景、交互特效、数据模型、前端架构、开发与验收。</p>
+<h3>重点场景</h3>
+<p>视频中包含国家会展中心三维建筑、城市电网全景、红色线路 / 电网拓扑、重点保电区域、供电单线图、设备下钻及剖视。关键帧见本归档「视频关键帧」和 <code>documents/三维前端复刻需求文档.html</code>。</p>
+<p><strong>说明：</strong> 本节是前序回复的结构化复述，不是逐字导出。</p>
+</div></article><article id="turn03"><div class="role">USER · 第 03 轮</div><div class="user">分析全景智慧电力保障系统, 架构设计，需要开发几个系统，如何规划</div><div class="role">ASSISTANT</div><div class="assistant"><h3>推荐系统边界</h3>
+<p>建议以 4 个终端应用作为长期规划：① 三维数字孪生指挥大屏；② 综合业务管理后台；③ 场景配置平台；④ 移动运维工作台。业务后端按资产、拓扑、监测、保电、告警工单和场景配置六个领域划分。</p>
+<h3>MVP 建设范围</h3>
+<p>方案 A：仅视频视觉复刻；方案 B：三维大屏 + 业务后台 + 统一 Node.js 后端；方案 C：补齐场景编辑器、移动端和真实数据集成。推荐 <strong>方案 B</strong>。</p>
+<h3>工作路线</h3>
+<p>首期采用 React + Cesium、React + Ant Design、NestJS、PostgreSQL / PostGIS、Redis、MinIO；先做单个可运营的保电业务闭环，后续扩展场景编辑器和移动运维。</p>
+<p><strong>说明：</strong> 本节是前序回复的结构化复述，不是逐字导出。</p>
+</div></article><article id="turn04"><div class="role">USER · 第 04 轮</div><div class="user">按照方案 B：可运营 MVP（推荐），为上海进博会全景智慧电力保障系统继续输出详细架构设计：系统功能菜单、页面清单、数据库表结构、接口清单、三维引擎设计、Monorepo 工程结构，以及每周开发任务和验收标准。</div><div class="role">ASSISTANT</div><div class="assistant"><h1>上海进博会全景智慧电力保障系统</h1>
+<p>方案 B · 可运营 MVP · 系统架构设计 V1.0 · 2026-11-04</p>
+<h2>一、项目建设范围与总体技术架构</h2>
+<h3>1.1 项目目标</h3>
+<p>以视频中的上海进博会保电场景为视觉参考，建设一套能够实际管理电力资产、展示供电网络、监测模拟运行数据、处理告警工单的 Web 数字孪生系统。</p>
+<p>本期的核心验收流程是：</p>
+<p><strong>保电任务配置 → 三维场景加载 → 运行状态监测 → 异常告警 → 故障定位 → 工单处理 → 恢复确认 → 事件归档。</strong></p>
+<p>与纯视觉 Demo 的区别在于：所有关键设备、线路、监测数据和业务状态都来自统一后端，而不是硬编码在 Three.js 场景中。</p>
+<h3>1.2 系统边界</h3>
+<pre><code>    **系统 A**
+    三维指挥大屏
+    React + Cesium
+  
+
+
+  
+    
+    **系统 B**
+    综合业务后台
+    React + Ant Design
+  
+
+
+  
+    
+    **系统 C**
+    统一业务后端
+    NestJS + PostgreSQL
+  </code></pre>
+<p>2 个独立前端应用 + 1 个模块化后端。场景编辑器和移动端暂不建设。</p>
+<h3>1.3 推荐技术栈</h3>
+<table>
+<thead>
+<tr>
+  <th>层级</th>
+  <th>选型</th>
+  <th>选择原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>前端框架</td>
+  <td>React + TypeScript + Vite</td>
+  <td>统一两个前端应用</td>
+</tr>
+<tr>
+  <td>UI 框架</td>
+  <td>Ant Design 6 / ECharts</td>
+  <td>后台管理与统计分析</td>
+</tr>
+<tr>
+  <td>城市三维</td>
+  <td>CesiumJS</td>
+  <td>GIS、三维建筑、镜头导航、空间拾取</td>
+</tr>
+<tr>
+  <td>精细模型</td>
+  <td>glTF / GLB</td>
+  <td>会展中心、变电站及设备</td>
+</tr>
+<tr>
+  <td>精细动画</td>
+  <td>Cesium 优先，必要时 Three.js</td>
+  <td>设备动画与专用效果</td>
+</tr>
+<tr>
+  <td>前端状态</td>
+  <td>Zustand + TanStack Query</td>
+  <td>场景状态与服务端数据分离</td>
+</tr>
+<tr>
+  <td>后端框架</td>
+  <td>NestJS + TypeScript</td>
+  <td>模块化、鉴权、WebSocket、OpenAPI</td>
+</tr>
+<tr>
+  <td>ORM</td>
+  <td>Prisma + 专用空间 SQL</td>
+  <td>常规业务 CRUD 与 PostGIS 查询</td>
+</tr>
+<tr>
+  <td>关系数据库</td>
+  <td>PostgreSQL + PostGIS</td>
+  <td>资产、业务和空间数据</td>
+</tr>
+<tr>
+  <td>时序数据</td>
+  <td>PostgreSQL 分区表</td>
+  <td>首期遥测历史，后续可扩展 TimescaleDB</td>
+</tr>
+<tr>
+  <td>缓存</td>
+  <td>Redis</td>
+  <td>最新测点、会话、事件分发</td>
+</tr>
+<tr>
+  <td>对象存储</td>
+  <td>MinIO</td>
+  <td>模型、图片、附件及导入文件</td>
+</tr>
+<tr>
+  <td>实时通信</td>
+  <td>WebSocket</td>
+  <td>监测状态、告警、工单消息</td>
+</tr>
+<tr>
+  <td>工程管理</td>
+  <td>pnpm Workspace + Turborepo</td>
+  <td>多应用共享代码和构建缓存</td>
+</tr>
+<tr>
+  <td>部署</td>
+  <td>Docker Compose + Nginx</td>
+  <td>开发、测试及中小规模部署</td>
+</tr>
+</tbody>
+</table>
+<p>CesiumJS 原生支持 3D Tiles、模型拾取及镜头导航，适合作为城市级场景主引擎。 NestJS 的模块和 WebSocket Gateway 能覆盖 MVP 的主要后端需求。</p>
+<h3>1.4 运行架构</h3>
+<div class="diagram"><div class="diagram-title">架构图 / 流程图源代码（Mermaid）</div><pre>flowchart TB
+    subgraph Client[&quot;前端应用&quot;]
+        SCREEN[&quot;三维指挥大屏 :3000&quot;]
+        ADMIN[&quot;业务管理后台 :3001&quot;]
+    end
+
+    NGINX[&quot;Nginx 统一入口HTTPS / 反向代理&quot;]
+    API[&quot;NestJS API :3002&quot;]
+    WS[&quot;WebSocket Gateway&quot;]
+
+    subgraph Domain[&quot;NestJS 业务模块&quot;]
+        AUTH[&quot;用户 / 权限&quot;]
+        ASSET[&quot;资产 / GIS&quot;]
+        TOPO[&quot;电网拓扑&quot;]
+        POWER[&quot;保电任务&quot;]
+        ALARM[&quot;监测 / 告警&quot;]
+        ORDER[&quot;工单 / 场景&quot;]
+    end
+
+    subgraph Storage[&quot;数据存储&quot;]
+        PG[(&quot;PostgreSQL + PostGIS&quot;)]
+        REDIS[(&quot;Redis&quot;)]
+        MINIO[(&quot;MinIO&quot;)]
+    end
+
+    SIM[&quot;数据模拟器&quot;]
+
+    SCREEN --&gt; NGINX
+    ADMIN --&gt; NGINX
+    NGINX --&gt; API
+    NGINX --&gt; WS
+    API --&gt; AUTH &amp; ASSET &amp; TOPO &amp; POWER &amp; ALARM &amp; ORDER
+    AUTH &amp; ASSET &amp; TOPO &amp; POWER &amp; ALARM &amp; ORDER --&gt; PG
+    API --&gt; REDIS
+    API --&gt; MINIO
+    SIM --&gt; ALARM
+    ALARM --&gt; WS
+    WS --&gt; SCREEN
+    WS --&gt; ADMIN
+</pre></div>
+<p>采用模块化单体时，这些业务模块运行在同一个 NestJS 服务进程中，不需要额外部署六套后端。</p>
+<hr />
+<h2>二、系统 A：三维数字孪生指挥大屏</h2>
+<h3>2.1 页面路由清单</h3>
+<table>
+<thead>
+<tr>
+  <th>页面 ID</th>
+  <th>路由</th>
+  <th>页面名称</th>
+  <th>级别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>A01</td>
+  <td><code>/twin/overview</code></td>
+  <td>上海城市电网全景</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A02</td>
+  <td><code>/twin/protection/:eventId</code></td>
+  <td>进博会重点保电专题</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A03</td>
+  <td><code>/twin/area/:areaId</code></td>
+  <td>保电区域三维场景</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A04</td>
+  <td><code>/twin/station/:stationId</code></td>
+  <td>变电站 / 配电房详情</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A05</td>
+  <td><code>/twin/device/:assetId</code></td>
+  <td>电力设备三维详情</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A06</td>
+  <td><code>/twin/topology</code></td>
+  <td>电网拓扑可视化</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A07</td>
+  <td><code>/twin/alarms</code></td>
+  <td>告警态势与定位</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>A08</td>
+  <td><code>/twin/replay</code></td>
+  <td>保电演示 / 事件回放</td>
+  <td>P1</td>
+</tr>
+</tbody>
+</table>
+<p>这里的不同路由不代表要为每一页创建独立 Cesium 实例。建议通过一个持久化的三维 Viewer，在路由变化时切换场景图层、业务数据及镜头状态。</p>
+<h3>2.2 核心页面 A01：城市电网全景</h3>
+<p>这是项目的总入口，构图参考原视频的深色科技大屏。</p>
+<pre><code>上海进博会全景智慧供电保障系统
+系统时间 · 保电任务 · 场景导航 · 用户状态
+
+
+
+  
+    左侧运行态势
+    
+    电网资产统计
+    
+    电力负荷趋势
+    
+    保障对象分类
+    
+  
+
+
+  
+    
+    Cesium 城市三维主场景
+    建筑 · 变电站 · 电网线路 · POI
+    
+      
+        
+          {item}
+        
+      
+    
+  
+
+
+  
+    右侧保障信息
+    
+    保障任务概况
+    
+    设备运行状态
+    
+    实时告警列表
+    
+  
+
+
+
+底部导航：全景态势 / 重点保电 / 电网拓扑 / 设备监控 / 告警指挥</code></pre>
+<p>1920×1080 目标界面的布局示意，实际开发采用 CSS Grid + 三维 Canvas 绝对定位。</p>
+<p>A01 核心功能：</p>
+<table>
+<thead>
+<tr>
+  <th>功能</th>
+  <th>用户操作</th>
+  <th>系统反馈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>城市漫游</td>
+  <td>拖拽、缩放、旋转</td>
+  <td>镜头实时更新</td>
+</tr>
+<tr>
+  <td>变电站筛选</td>
+  <td>选择电压等级、运行状态</td>
+  <td>过滤资产标记</td>
+</tr>
+<tr>
+  <td>供电线路展示</td>
+  <td>打开线路图层</td>
+  <td>显示线路及流光</td>
+</tr>
+<tr>
+  <td>重点保电区域</td>
+  <td>点击国家会展中心</td>
+  <td>飞入 A02 保电专题</td>
+</tr>
+<tr>
+  <td>设备信息查看</td>
+  <td>点击空间标记</td>
+  <td>弹出设备卡片</td>
+</tr>
+<tr>
+  <td>告警定位</td>
+  <td>点击右侧告警</td>
+  <td>镜头定位、高亮对象</td>
+</tr>
+<tr>
+  <td>自动巡航</td>
+  <td>点击巡航按钮</td>
+  <td>按预设镜头路径播放</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 核心页面 A02：进博会保电专题</h3>
+<p>这一页应该成为首期的<strong>视觉标杆页面</strong>。</p>
+<p>场景中主要展示国家会展中心及周边供电设施。</p>
+<table>
+<thead>
+<tr>
+  <th>对象</th>
+  <th>三维表达</th>
+  <th>交互</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>国家会展中心</td>
+  <td>精细建筑 GLB 模型</td>
+  <td>点击聚焦、建筑高亮</td>
+</tr>
+<tr>
+  <td>周边城市建筑</td>
+  <td>3D Tiles / 简模</td>
+  <td>LOD 自动加载</td>
+</tr>
+<tr>
+  <td>保障范围</td>
+  <td>半透明区域面、描边光效</td>
+  <td>显示保障对象</td>
+</tr>
+<tr>
+  <td>变电站</td>
+  <td>三维模型、空间标签</td>
+  <td>跳转站所详情</td>
+</tr>
+<tr>
+  <td>电缆线路</td>
+  <td>动态发光曲线</td>
+  <td>点击查看线路信息</td>
+</tr>
+<tr>
+  <td>重点用户</td>
+  <td>POI 图标、状态颜色</td>
+  <td>查看供电路径</td>
+</tr>
+<tr>
+  <td>告警设备</td>
+  <td>脉冲圈、红色标记</td>
+  <td>进入故障定位</td>
+</tr>
+<tr>
+  <td>应急资源</td>
+  <td>车辆 / 人员位置标记</td>
+  <td>查看资源信息</td>
+</tr>
+</tbody>
+</table>
+<p>建议将镜头动画配置成数据：</p>
+<pre><code class="language-ts">type CameraPreset = {
+  id: string;
+  sceneId: string;
+  name: string;
+  destination: {
+    lng: number;
+    lat: number;
+    height: number;
+  };
+  orientation: {
+    heading: number;
+    pitch: number;
+    roll: number;
+  };
+  duration: number;
+  easing?: &quot;linear&quot; | &quot;easeInOut&quot;;
+};
+</code></pre>
+<h3>2.4 场景下钻交互</h3>
+<div class="diagram"><div class="diagram-title">架构图 / 流程图源代码（Mermaid）</div><pre>flowchart LR
+  A[&quot;上海城市全景&quot;] --&gt; B[&quot;国家会展中心&quot;]
+  B --&gt; C[&quot;保障区域&quot;]
+  C --&gt; D[&quot;变电站 / 配电房&quot;]
+  D --&gt; E[&quot;电气设备&quot;]
+  E --&gt; F[&quot;监测数据 / 工单&quot;]
+</pre></div>
+<p>必须同时支持两种导航方式：用户在三维模型中点击进入，以及从面包屑中返回上级场景。</p>
+<p>建议保存每一级的相机状态、选中资产和图层状态。返回上一层时恢复原镜头，而不是重置到默认视角。</p>
+<hr />
+<h2>三、系统 B：综合业务管理后台</h2>
+<h3>3.1 完整菜单树</h3>
+<pre><code>  setExpanded(old=&gt;old.includes(i)?old.filter(v=&gt;v!==i):[...old,i])} direction=&quot;row&quot; align=&quot;center&quot; justify=&quot;between&quot; padding={{y:1}}&gt;
+    
+      
+      {m.n}
+    
+    
+  
+  
+    
+      {m.d}
+      {m.p}
+    
+  
+  
+    
+  </code></pre>
+<h3>3.2 具体页面清单</h3>
+<table>
+<thead>
+<tr>
+  <th>模块</th>
+  <th>页面 / 路由</th>
+  <th>核心操作</th>
+  <th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>工作台</td>
+  <td><code>/dashboard</code></td>
+  <td>统计、待办、告警</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>/assets/areas</code></td>
+  <td>区域增删改查</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>/assets/stations</code></td>
+  <td>变电站管理</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>/assets/equipment</code></td>
+  <td>设备台账</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>/assets/lines</code></td>
+  <td>供电线路管理</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>/assets/import</code></td>
+  <td>CSV / Excel 批量导入</td>
+  <td>P1</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>/topology/graph</code></td>
+  <td>拓扑关系查看与编辑</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>/topology/paths</code></td>
+  <td>供电路径查询</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>/monitoring/points</code></td>
+  <td>测点配置</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>/monitoring/realtime</code></td>
+  <td>最新值与状态查看</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>/monitoring/history</code></td>
+  <td>历史曲线</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>保电</td>
+  <td><code>/protection/events</code></td>
+  <td>保电任务 CRUD</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>保电</td>
+  <td><code>/protection/events/:id</code></td>
+  <td>保障对象与线路关联</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>告警</td>
+  <td><code>/alarms/events</code></td>
+  <td>告警确认、定位</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>告警</td>
+  <td><code>/alarms/rules</code></td>
+  <td>告警阈值维护</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>工单</td>
+  <td><code>/work-orders</code></td>
+  <td>创建、分配、处理、关闭</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>/scenes</code></td>
+  <td>场景列表、发布</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>/scenes/models</code></td>
+  <td>模型上传、绑定</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>/scenes/cameras</code></td>
+  <td>镜头预设维护</td>
+  <td>P1</td>
+</tr>
+<tr>
+  <td>报表</td>
+  <td><code>/reports/protection</code></td>
+  <td>保电活动报告</td>
+  <td>P1</td>
+</tr>
+<tr>
+  <td>系统</td>
+  <td><code>/system/users</code></td>
+  <td>用户管理</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>系统</td>
+  <td><code>/system/roles</code></td>
+  <td>角色及权限</td>
+  <td>P0</td>
+</tr>
+<tr>
+  <td>系统</td>
+  <td><code>/system/audit</code></td>
+  <td>操作审计</td>
+  <td>P0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>后台首期约 23 个路由页面。</strong> 其中详情、编辑、确认等操作优先采用 Drawer / Modal，避免每个操作都增加独立页面。</p>
+<h3>3.3 角色与权限</h3>
+<table>
+<thead>
+<tr>
+  <th>角色</th>
+  <th>主要权限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>超级管理员</td>
+  <td>系统配置、角色管理、全部资源</td>
+</tr>
+<tr>
+  <td>保电管理员</td>
+  <td>保电活动、保障对象、计划配置</td>
+</tr>
+<tr>
+  <td>运维主管</td>
+  <td>资产查看、告警管理、工单分配</td>
+</tr>
+<tr>
+  <td>运维人员</td>
+  <td>查看分配的工单、提交处理记录</td>
+</tr>
+<tr>
+  <td>指挥大屏用户</td>
+  <td>三维查看、告警查看，无设备控制权限</td>
+</tr>
+</tbody>
+</table>
+<p>权限结构采用 RBAC，功能权限与数据范围分离。所有后端资源访问都需要重新校验权限，不能仅依靠前端隐藏菜单。</p>
+<hr />
+<h2>四、数据库设计</h2>
+<h3>4.1 数据库总体方案</h3>
+<p>首期采用一个 PostgreSQL 实例，按业务逻辑划分表，不使用跨数据库分布式事务。</p>
+<p>空间数据使用 PostGIS 的 <code>geometry</code> 类型，电力拓扑使用关系表表达，运行历史使用按时间分区的时序表。</p>
+<p>PostGIS 空间字段建议建立 GiST 索引，并通过 <code>ST_Intersects</code>、<code>ST_DWithin</code> 等函数执行空间检索。</p>
+<h3>4.2 ER 核心关系</h3>
+<div class="diagram"><div class="diagram-title">架构图 / 流程图源代码（Mermaid）</div><pre>erDiagram
+    AREA ||--o{ ASSET : contains
+    ASSET ||--o{ ASSET_MODEL_BINDING : binds
+    SCENE ||--o{ ASSET_MODEL_BINDING : displays
+    SCENE ||--o{ CAMERA_PRESET : has
+    ASSET ||--o{ MEASUREMENT_POINT : monitors
+    MEASUREMENT_POINT ||--o{ TELEMETRY_HISTORY : records
+    MEASUREMENT_POINT ||--o{ ALARM_EVENT : triggers
+    ASSET ||--o{ TOPOLOGY_NODE : maps
+    TOPOLOGY_NODE ||--o{ TOPOLOGY_EDGE : connects
+    PROTECTION_EVENT ||--o{ PROTECTION_TARGET : contains
+    ASSET ||--o{ PROTECTION_TARGET : targets
+    ALARM_EVENT ||--o{ WORK_ORDER : generates
+    WORK_ORDER ||--o{ WORK_ORDER_LOG : has
+    USER ||--o{ WORK_ORDER : assigned
+</pre></div>
+<p>一个资产可以包含多个监测点；一个监测点拥有多条历史记录；告警可以关联设备和监测点；工单通过告警事件关联三维资产。</p>
+<p>需要特别区分 <code>asset</code> 和 <code>topology_node</code>：资产是业务台账对象，而拓扑节点可能是母线端点、接线端子或逻辑连接点，不一定对应一个独立实物资产。</p>
+<h3>4.3 数据表清单</h3>
+<p>以下为核心表设计。所有主数据表统一包含 <code>id</code>、<code>created_at</code>、<code>updated_at</code>；需要追踪责任人的表增加 <code>created_by</code>、<code>updated_by</code>。</p>
+<table>
+<thead>
+<tr>
+  <th>业务域</th>
+  <th>表名</th>
+  <th>主要字段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_user</code></td>
+  <td>username, password_hash, status</td>
+</tr>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_role</code></td>
+  <td>code, name, status</td>
+</tr>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_user_role</code></td>
+  <td>user_id, role_id</td>
+</tr>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_permission</code></td>
+  <td>code, resource, action</td>
+</tr>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_role_permission</code></td>
+  <td>role_id, permission_id</td>
+</tr>
+<tr>
+  <td>组织权限</td>
+  <td><code>sys_audit_log</code></td>
+  <td>actor_id, action, resource_id, diff, occurred_at</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>area</code></td>
+  <td>name, type, parent_id, boundary</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>asset</code></td>
+  <td>code, name, type, area_id, parent_id, location, status</td>
+</tr>
+<tr>
+  <td>资产</td>
+  <td><code>power_line</code></td>
+  <td>asset_id, voltage_level, route, length_m</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>topology_node</code></td>
+  <td>asset_id, node_type, electrical_code</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>topology_edge</code></td>
+  <td>from_node_id, to_node_id, line_id, state</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>topology_version</code></td>
+  <td>version, status, published_at</td>
+</tr>
+<tr>
+  <td>拓扑</td>
+  <td><code>topology_edge_version</code></td>
+  <td>version_id, edge_id, snapshot</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>measurement_point</code></td>
+  <td>asset_id, code, metric, unit</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>telemetry_history</code></td>
+  <td>point_id, ts, value, quality</td>
+</tr>
+<tr>
+  <td>监测</td>
+  <td><code>alarm_rule</code></td>
+  <td>point_id, operator, threshold, severity</td>
+</tr>
+<tr>
+  <td>告警</td>
+  <td><code>alarm_event</code></td>
+  <td>rule_id, point_id, asset_id, severity, status</td>
+</tr>
+<tr>
+  <td>保电</td>
+  <td><code>protection_event</code></td>
+  <td>name, start_time, end_time, status</td>
+</tr>
+<tr>
+  <td>保电</td>
+  <td><code>protection_target</code></td>
+  <td>event_id, asset_id, priority</td>
+</tr>
+<tr>
+  <td>保电</td>
+  <td><code>protection_plan</code></td>
+  <td>event_id, name, content, status</td>
+</tr>
+<tr>
+  <td>运维</td>
+  <td><code>work_order</code></td>
+  <td>alarm_id, assignee_id, status, priority</td>
+</tr>
+<tr>
+  <td>运维</td>
+  <td><code>work_order_log</code></td>
+  <td>order_id, operator_id, action, remark</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>scene</code></td>
+  <td>code, name, level, config, status</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>scene_layer</code></td>
+  <td>scene_id, type, config, visible</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>scene_model</code></td>
+  <td>name, file_key, format, version</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>asset_model_binding</code></td>
+  <td>scene_id, asset_id, model_id, transform</td>
+</tr>
+<tr>
+  <td>场景</td>
+  <td><code>camera_preset</code></td>
+  <td>scene_id, name, destination, orientation</td>
+</tr>
+</tbody>
+</table>
+<p>首期共 <strong>27 张核心业务表</strong>。数据字典、文件上传记录、工单附件、历史状态等辅助表可在详细设计时增加。</p>
+<h3>4.4 核心资产表 SQL</h3>
+<pre><code>CREATE EXTENSION IF NOT EXISTS postgis;
+
+CREATE TABLE area (
+  id UUID PRIMARY KEY,
+  parent_id UUID REFERENCES area(id),
+  code VARCHAR(64) NOT NULL UNIQUE,
+  name VARCHAR(128) NOT NULL,
+  type VARCHAR(32) NOT NULL,
+  boundary GEOMETRY(MultiPolygon, 4326),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE asset (
+  id UUID PRIMARY KEY,
+  code VARCHAR(64) NOT NULL UNIQUE,
+  name VARCHAR(128) NOT NULL,
+  type VARCHAR(32) NOT NULL,
+  area_id UUID REFERENCES area(id),
+  parent_id UUID REFERENCES asset(id),
+  voltage_level VARCHAR(32),
+  status VARCHAR(24) NOT NULL DEFAULT 'NORMAL',
+  location GEOMETRY(Point, 4326),
+  properties JSONB NOT NULL DEFAULT '{}'::jsonb,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE INDEX idx_asset_area ON asset(area_id);
+CREATE INDEX idx_asset_parent ON asset(parent_id);
+CREATE INDEX idx_asset_location
+  ON asset USING GIST(location);
+</code></pre>
+<p><code>properties</code> 用于保存型号、厂家等设备类型特有的扩展属性。设备编码、状态、位置和关联关系等查询频繁的字段必须使用独立列。</p>
+<h3>4.5 电网拓扑 SQL</h3>
+<pre><code>CREATE TABLE topology_node (
+  id UUID PRIMARY KEY,
+  asset_id UUID REFERENCES asset(id),
+  electrical_code VARCHAR(64) NOT NULL UNIQUE,
+  node_type VARCHAR(32) NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE topology_edge (
+  id UUID PRIMARY KEY,
+  from_node_id UUID NOT NULL
+    REFERENCES topology_node(id),
+  to_node_id UUID NOT NULL
+    REFERENCES topology_node(id),
+  line_id UUID REFERENCES asset(id),
+  state VARCHAR(16) NOT NULL
+    CHECK (state IN ('CLOSED', 'OPEN', 'UNKNOWN')),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CHECK (from_node_id &lt;&gt; to_node_id)
+);
+
+CREATE INDEX idx_edge_from
+  ON topology_edge(from_node_id);
+
+CREATE INDEX idx_edge_to
+  ON topology_edge(to_node_id);
+</code></pre>
+<p>供电拓扑不是普通的树结构，可能存在环网和多电源连接。遍历时必须维护 visited 集合，并根据开关状态决定当前连通关系。</p>
+<p>正式生产场景还需要增加拓扑版本、连接端子、电气设备类型和遥信状态的有效时间；MVP 先完成只读路径追踪与影响分析。</p>
+<h3>4.6 监测数据 SQL</h3>
+<pre><code>CREATE TABLE measurement_point (
+  id UUID PRIMARY KEY,
+  asset_id UUID NOT NULL REFERENCES asset(id),
+  code VARCHAR(64) NOT NULL UNIQUE,
+  metric VARCHAR(48) NOT NULL,
+  unit VARCHAR(16) NOT NULL,
+  enabled BOOLEAN NOT NULL DEFAULT true
+);
+
+CREATE TABLE telemetry_history (
+  point_id UUID NOT NULL REFERENCES measurement_point(id),
+  ts TIMESTAMPTZ NOT NULL,
+  value DOUBLE PRECISION NOT NULL,
+  quality VARCHAR(16) NOT NULL DEFAULT 'GOOD',
+  PRIMARY KEY (point_id, ts)
+) PARTITION BY RANGE (ts);
+
+CREATE TABLE telemetry_history_2026_11
+PARTITION OF telemetry_history
+FOR VALUES FROM ('2026-11-01')
+TO ('2026-12-01');
+</code></pre>
+<p>这个表是历史遥测数据的基础结构。真实项目还要根据保留周期自动创建新分区、清理旧分区，并支持一个测点在同一时间出现多条采集记录的场景（可增加采集序号）。</p>
+<p>实时最新值单独存放 Redis，例如：</p>
+<pre><code class="language-text">telemetry:latest:{pointId}
+
+{
+  value: 10.53,
+  unit: &quot;kV&quot;,
+  quality: &quot;GOOD&quot;,
+  timestamp: &quot;2026-11-04T08:00:00Z&quot;
+}
+</code></pre>
+<p>客户端按资产订阅测点，而不是直接订阅整座城市所有监测点。</p>
+<h3>4.7 告警及工单状态机</h3>
+<pre><code>**告警状态**
+
+```mermaid
+flowchart TD
+  A[&quot;ACTIVE&quot;] --&gt; B[&quot;ACKNOWLEDGED&quot;]
+  A --&gt; C[&quot;CLEARED&quot;]
+  B --&gt; C
+  C --&gt; D[&quot;CLOSED&quot;]
+```
+
+
+**工单状态**
+
+```mermaid
+flowchart TD
+  A[&quot;NEW&quot;] --&gt; B[&quot;ASSIGNED&quot;]
+  B --&gt; C[&quot;IN_PROGRESS&quot;]
+  C --&gt; D[&quot;PENDING_REVIEW&quot;]
+  D --&gt; E[&quot;CLOSED&quot;]
+  D --&gt; C
+```</code></pre>
+<p>告警消除不等于工单已经处理完成。告警状态表示设备异常是否仍存在，工单状态表示人员处置流程是否完成，二者必须独立管理。</p>
+<hr />
+<h2>五、REST API 接口设计</h2>
+<p>统一前缀：</p>
+<p><code>/api/v1</code></p>
+<p>统一认证方式：短期 Access Token + 安全的 Refresh Token 机制；刷新令牌放在 HttpOnly、Secure Cookie 中。</p>
+<h3>5.1 用户与系统</h3>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Endpoint</th>
+  <th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>POST</td>
+  <td><code>/auth/login</code></td>
+  <td>登录</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/auth/refresh</code></td>
+  <td>刷新令牌</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/auth/logout</code></td>
+  <td>退出</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/auth/me</code></td>
+  <td>当前用户和权限</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/users</code></td>
+  <td>查询 / 创建用户</td>
+</tr>
+<tr>
+  <td>PATCH</td>
+  <td><code>/users/:id</code></td>
+  <td>修改用户</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/roles</code></td>
+  <td>角色查询 / 创建</td>
+</tr>
+<tr>
+  <td>PUT</td>
+  <td><code>/roles/:id/permissions</code></td>
+  <td>设置角色权限</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/audit-logs</code></td>
+  <td>查询审计记录</td>
+</tr>
+</tbody>
+</table>
+<h3>5.2 资产与电网</h3>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Endpoint</th>
+  <th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/areas</code></td>
+  <td>区域列表 / 新建</td>
+</tr>
+<tr>
+  <td>GET / PATCH</td>
+  <td><code>/areas/:id</code></td>
+  <td>区域详情 / 编辑</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/assets</code></td>
+  <td>资产列表 / 新建</td>
+</tr>
+<tr>
+  <td>GET / PATCH</td>
+  <td><code>/assets/:id</code></td>
+  <td>资产详情 / 编辑</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/assets/:id/children</code></td>
+  <td>子资产</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/assets/:id/measurements</code></td>
+  <td>关联测点</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/assets/geojson</code></td>
+  <td>按视域查询资产坐标</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/power-lines</code></td>
+  <td>电力线路管理</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/topology/graph</code></td>
+  <td>拓扑图节点和边</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/topology/paths</code></td>
+  <td>两个节点间供电路径</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/topology/impact</code></td>
+  <td>基于拓扑版本的影响分析</td>
+</tr>
+</tbody>
+</table>
+<p><code>/assets/geojson</code> 必须支持 <code>bbox</code>、<code>zoom</code>、<code>type</code> 等筛选条件。城市级场景不应一次加载所有资产。</p>
+<h3>5.3 实时监测与告警</h3>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Endpoint</th>
+  <th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/measurement-points</code></td>
+  <td>监测点配置</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/telemetry/latest</code></td>
+  <td>批量查询最新值</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/telemetry/history</code></td>
+  <td>历史时序</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/alarm-rules</code></td>
+  <td>阈值规则维护</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/alarms</code></td>
+  <td>告警分页列表</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/alarms/:id</code></td>
+  <td>告警详情</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/alarms/:id/acknowledge</code></td>
+  <td>确认告警</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/alarms/:id/close</code></td>
+  <td>关闭已满足条件的告警</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/statistics/overview</code></td>
+  <td>大屏总览统计</td>
+</tr>
+</tbody>
+</table>
+<h3>5.4 保电业务与工单</h3>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Endpoint</th>
+  <th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/protection-events</code></td>
+  <td>保电活动管理</td>
+</tr>
+<tr>
+  <td>GET / PATCH</td>
+  <td><code>/protection-events/:id</code></td>
+  <td>活动详情 / 修改</td>
+</tr>
+<tr>
+  <td>PUT</td>
+  <td><code>/protection-events/:id/targets</code></td>
+  <td>绑定保电对象</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/protection-events/:id/assets</code></td>
+  <td>关联资产</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/protection-plans</code></td>
+  <td>保障预案</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/work-orders</code></td>
+  <td>工单列表 / 创建</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/work-orders/:id</code></td>
+  <td>工单详情</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/work-orders/:id/assign</code></td>
+  <td>指派</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/work-orders/:id/start</code></td>
+  <td>开始处理</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/work-orders/:id/submit</code></td>
+  <td>提交复核</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/work-orders/:id/review</code></td>
+  <td>审核通过 / 驳回</td>
+</tr>
+</tbody>
+</table>
+<p>涉及状态流转的接口必须校验当前状态、操作者权限和版本号。重复提交需要幂等处理，避免生成重复工单或重复记录。</p>
+<h3>5.5 三维场景接口</h3>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Endpoint</th>
+  <th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/scenes</code></td>
+  <td>场景列表 / 创建</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/scenes/:id</code></td>
+  <td>获取场景配置</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/scenes/:id/layers</code></td>
+  <td>图层列表</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/scenes/:id/objects</code></td>
+  <td>场景对象</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td><code>/scenes/:id/cameras</code></td>
+  <td>镜头预设</td>
+</tr>
+<tr>
+  <td>GET / POST</td>
+  <td><code>/scene-models</code></td>
+  <td>模型资源</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/scene-models/upload-url</code></td>
+  <td>获取授权上传地址</td>
+</tr>
+<tr>
+  <td>PUT</td>
+  <td><code>/scenes/:id/bindings</code></td>
+  <td>批量配置模型和资产绑定</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td><code>/scenes/:id/publish</code></td>
+  <td>发布场景版本</td>
+</tr>
+</tbody>
+</table>
+<p>上传模型使用服务端校验后的预签名上传机制，不允许客户端随意传入任意存储路径。首期场景配置以表单与 JSON 为主，不开发完整拖拽式编辑器。</p>
+<h3>5.6 统一返回格式</h3>
+<pre><code>{
+  &quot;code&quot;: &quot;OK&quot;,
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;asset-10001&quot;,
+    &quot;name&quot;: &quot;1号主变压器&quot;,
+    &quot;status&quot;: &quot;NORMAL&quot;
+  },
+  &quot;requestId&quot;: &quot;req-abc123&quot;
+}
+</code></pre>
+<p>列表接口统一返回 <code>items</code>、<code>total</code>、<code>page</code>、<code>pageSize</code>。失败响应使用正确的 HTTP 状态码和稳定的业务错误码。</p>
+<p>NestJS 可通过 <code>@nestjs/swagger</code> 生成 OpenAPI 文档，并据此生成前端 TypeScript API Client。</p>
+<hr />
+<h2>六、WebSocket 实时通信设计</h2>
+<p>首期仅有一个 WebSocket 网关。生产演进时可以独立拆分。</p>
+<h3>6.1 消息通道</h3>
+<table>
+<thead>
+<tr>
+  <th>事件</th>
+  <th>方向</th>
+  <th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>telemetry.subscribe</code></td>
+  <td>客户端 → 服务端</td>
+  <td>订阅测点</td>
+</tr>
+<tr>
+  <td><code>telemetry.batch</code></td>
+  <td>服务端 → 客户端</td>
+  <td>批量推送最新值</td>
+</tr>
+<tr>
+  <td><code>alarm.created</code></td>
+  <td>服务端 → 客户端</td>
+  <td>新告警</td>
+</tr>
+<tr>
+  <td><code>alarm.updated</code></td>
+  <td>服务端 → 客户端</td>
+  <td>告警状态变化</td>
+</tr>
+<tr>
+  <td><code>asset.status_changed</code></td>
+  <td>服务端 → 客户端</td>
+  <td>设备状态更新</td>
+</tr>
+<tr>
+  <td><code>work_order.updated</code></td>
+  <td>服务端 → 客户端</td>
+  <td>工单变化</td>
+</tr>
+<tr>
+  <td><code>system.heartbeat</code></td>
+  <td>双向</td>
+  <td>心跳与连接检测</td>
+</tr>
+</tbody>
+</table>
+<h3>6.2 遥测数据报文</h3>
+<pre><code>{
+  &quot;event&quot;: &quot;telemetry.batch&quot;,
+  &quot;seq&quot;: 10245,
+  &quot;timestamp&quot;: &quot;2026-11-04T08:00:00Z&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;assetId&quot;: &quot;asset-10001&quot;,
+      &quot;pointId&quot;: &quot;mp-voltage-a&quot;,
+      &quot;metric&quot;: &quot;voltage&quot;,
+      &quot;value&quot;: 10.53,
+      &quot;unit&quot;: &quot;kV&quot;,
+      &quot;quality&quot;: &quot;GOOD&quot;
+    },
+    {
+      &quot;assetId&quot;: &quot;asset-10001&quot;,
+      &quot;pointId&quot;: &quot;mp-temperature&quot;,
+      &quot;metric&quot;: &quot;temperature&quot;,
+      &quot;value&quot;: 43.6,
+      &quot;unit&quot;: &quot;°C&quot;,
+      &quot;quality&quot;: &quot;GOOD&quot;
+    }
+  ]
+}
+</code></pre>
+<p>浏览器端需要实现自动重连、订阅恢复、数据过期检测、序列号去重，以及断线后通过 HTTP 重新拉取最新快照。</p>
+<p>建议模拟数据每 1–5 秒生成一次，服务端批量推送。三维标签不需要跟着每条采样立即重建 DOM 或模型，应该做节流与差量更新。</p>
+<hr />
+<h2>七、三维引擎详细设计</h2>
+<p>这一部分直接决定未来能不能从「上海进博会项目」扩展成通用数字孪生平台。</p>
+<h3>7.1 三维引擎分层</h3>
+<pre><code>**React 业务组件层**
+
+业务面板 · 告警卡片 · 设备详情 · 底部导航
+
+
+
+Twin Application SDK
+
+  
+    
+      
+        {item}
+      
+    
+  
+
+
+
+
+渲染与交互内核
+
+  
+    
+      
+        {item}
+      
+    
+  
+
+
+
+
+**CesiumJS 渲染引擎**
+
+WebGL · 3D Tiles · glTF · Entity · Primitive</code></pre>
+<h3>7.2 核心模块职责</h3>
+<table>
+<thead>
+<tr>
+  <th>模块</th>
+  <th>主要职责</th>
+  <th>关键 API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>TwinEngine</code></td>
+  <td>初始化、销毁、全局配置</td>
+  <td><code>init</code>, <code>dispose</code></td>
+</tr>
+<tr>
+  <td><code>SceneManager</code></td>
+  <td>场景加载、卸载、切换</td>
+  <td><code>loadScene</code>, <code>switchScene</code></td>
+</tr>
+<tr>
+  <td><code>CameraManager</code></td>
+  <td>飞行、聚焦、镜头恢复</td>
+  <td><code>flyTo</code>, <code>focusAsset</code>, <code>restore</code></td>
+</tr>
+<tr>
+  <td><code>TilesetManager</code></td>
+  <td>城市模型和 3D Tiles 管理</td>
+  <td><code>load</code>, <code>unload</code></td>
+</tr>
+<tr>
+  <td><code>ModelManager</code></td>
+  <td>GLB 设备模型和实例</td>
+  <td><code>addModel</code>, <code>removeModel</code></td>
+</tr>
+<tr>
+  <td><code>PowerLineLayer</code></td>
+  <td>电力线、颜色、流光</td>
+  <td><code>setLines</code>, <code>highlightPath</code></td>
+</tr>
+<tr>
+  <td><code>LabelManager</code></td>
+  <td>空间标签、聚合、遮挡</td>
+  <td><code>addPOI</code>, <code>setVisible</code></td>
+</tr>
+<tr>
+  <td><code>SelectionManager</code></td>
+  <td>射线拾取、选中高亮</td>
+  <td><code>pick</code>, <code>select</code>, <code>clear</code></td>
+</tr>
+<tr>
+  <td><code>EffectManager</code></td>
+  <td>发光、脉冲、告警效果</td>
+  <td><code>play</code>, <code>stop</code></td>
+</tr>
+<tr>
+  <td><code>DataBindingManager</code></td>
+  <td>设备状态与模型同步</td>
+  <td><code>bind</code>, <code>update</code></td>
+</tr>
+<tr>
+  <td><code>TourManager</code></td>
+  <td>自动巡航、关键帧播放</td>
+  <td><code>play</code>, <code>pause</code>, <code>seek</code></td>
+</tr>
+</tbody>
+</table>
+<h3>7.3 引擎统一接口</h3>
+<pre><code>export interface ITwinEngine {
+  init(container: HTMLElement): Promise;
+
+  loadScene(sceneId: string): Promise;
+
+  flyToAsset(assetId: string): Promise;
+
+  selectAsset(assetId: string): void;
+
+  setLayerVisible(
+    layerId: string,
+    visible: boolean
+  ): void;
+
+  highlightPowerPath(
+    pathId: string,
+    color?: string
+  ): void;
+
+  updateAssetState(
+    assetId: string,
+    state: AssetRenderState
+  ): void;
+
+  playTour(tourId: string): Promise;
+
+  dispose(): void;
+}
+
+export type AssetRenderState = {
+  status: &quot;NORMAL&quot; | &quot;WARNING&quot; | &quot;FAULT&quot; | &quot;OFFLINE&quot;;
+  metrics?: Record;
+};
+</code></pre>
+<p>这样 React 业务层可以通过 <code>twinEngine.flyToAsset(assetId)</code> 定位设备，而不需要直接操作 Cesium Entity。</p>
+<h3>7.4 三维对象与业务资产绑定</h3>
+<p>推荐数据结构：</p>
+<pre><code>{
+  &quot;sceneId&quot;: &quot;scene-expo&quot;,
+  &quot;assetId&quot;: &quot;asset-transformer-001&quot;,
+  &quot;objectId&quot;: &quot;model-transformer-001&quot;,
+  &quot;modelId&quot;: &quot;glb-transformer-a&quot;,
+  &quot;transform&quot;: {
+    &quot;position&quot;: {
+      &quot;lng&quot;: 121.301,
+      &quot;lat&quot;: 31.192,
+      &quot;height&quot;: 5.2
+    },
+    &quot;rotation&quot;: [0, 0, 0],
+    &quot;scale&quot;: [1, 1, 1]
+  },
+  &quot;interaction&quot;: {
+    &quot;selectable&quot;: true,
+    &quot;highlight&quot;: true,
+    &quot;openDetail&quot;: true
+  }
+}
+</code></pre>
+<p>上面坐标仅为数据格式示例，并非已校准的真实设备位置。</p>
+<p>模型资源与业务资产通过 ID 绑定。点击模型时，拾取结果应能还原 <code>assetId</code>，然后查询后端资产详情。对合批模型、3D Tiles Feature 或多个部件组成的设备，需要建立对象映射表，不能依赖显示名称匹配。</p>
+<h3>7.5 核心交互：告警自动定位</h3>
+<div class="diagram"><div class="diagram-title">架构图 / 流程图源代码（Mermaid）</div><pre>sequenceDiagram
+    participant Sim as 模拟采集器
+    participant API as NestJS
+    participant WS as WebSocket
+    participant UI as React 大屏
+    participant Twin as TwinEngine
+
+    Sim-&gt;&gt;API: 推送异常监测值
+    API-&gt;&gt;API: 规则检测、生成告警
+    API-&gt;&gt;WS: alarm.created
+    WS--&gt;&gt;UI: 发送告警事件
+    UI-&gt;&gt;UI: 更新告警列表
+    UI-&gt;&gt;Twin: flyToAsset(assetId)
+    Twin-&gt;&gt;Twin: 加载关联场景与模型
+    Twin-&gt;&gt;Twin: 镜头定位并高亮
+    Twin--&gt;&gt;UI: 定位完成
+    UI-&gt;&gt;API: GET /assets/:id
+    API--&gt;&gt;UI: 设备详情与监测数据
+    UI-&gt;&gt;UI: 打开告警详情面板
+</pre></div>
+<p>定位时特别注意：告警的 <code>assetId</code> 可能属于配电房内部设备，而当前场景是上海城市。引擎需要先解析资产所属场景链，再决定应该加载哪个场景。</p>
+<h3>7.6 线路动画设计</h3>
+<p>电力线路建议同时维护三个概念：</p>
+<table>
+<thead>
+<tr>
+  <th>数据</th>
+  <th>含义</th>
+  <th>可视化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>地理路径 <code>route</code></td>
+  <td>线路实际空间位置</td>
+  <td>Cesium Polyline</td>
+</tr>
+<tr>
+  <td>拓扑边 <code>topology_edge</code></td>
+  <td>电气连接关系</td>
+  <td>供电路径分析</td>
+</tr>
+<tr>
+  <td>运行状态 <code>state</code></td>
+  <td>正常、异常、停运等</td>
+  <td>颜色、动画状态</td>
+</tr>
+</tbody>
+</table>
+<p>三者不能混用。一条拓扑边可能对应多段实际地理线路，线路几何位置也不代表当前电气连通状态。</p>
+<p>动画第一版可使用 Cesium Material / Primitive 实现动态纹理流动。电压等级用颜色及图例区分，流光只能表达演示或经过计算的方向，不能默认认为流光方向就是真实潮流方向。</p>
+<h3>7.7 模型与渲染性能</h3>
+<p>以下是项目设计目标，实际值需在目标硬件上压测，不是 Cesium 的性能保证。</p>
+<table>
+<thead>
+<tr>
+  <th>指标</th>
+  <th>MVP 目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>设计分辨率</td>
+  <td>1920×1080</td>
+</tr>
+<tr>
+  <td>场景稳定帧率</td>
+  <td>常用演示工作站 ≥30 FPS</td>
+</tr>
+<tr>
+  <td>目标帧率</td>
+  <td>60 FPS，允许按设备降级</td>
+</tr>
+<tr>
+  <td>首屏可操作时间</td>
+  <td>本地缓存 / 局域网环境约 5 秒以内</td>
+</tr>
+<tr>
+  <td>典型场景切换</td>
+  <td>已缓存场景约 3 秒以内</td>
+</tr>
+<tr>
+  <td>POI 数量</td>
+  <td>典型视图 200 个以内，超出聚合</td>
+</tr>
+<tr>
+  <td>线路数量</td>
+  <td>首期 100–300 条示例线路</td>
+</tr>
+<tr>
+  <td>设备数量</td>
+  <td>500–1000 个模拟资产</td>
+</tr>
+<tr>
+  <td>WebSocket 延迟</td>
+  <td>测试环境 P95 小于 1 秒</td>
+</tr>
+<tr>
+  <td>内存</td>
+  <td>长时间巡航无持续增长趋势</td>
+</tr>
+</tbody>
+</table>
+<p>优化重点是按需加载、LOD、资源释放、批量渲染、标签聚合、动画限帧以及数据更新与渲染解耦。Cesium 3D Tiles 本身提供屏幕空间误差和缓存等调节选项。</p>
+<hr />
+<h2>八、Monorepo 工程架构</h2>
+<h3>8.1 完整项目目录</h3>
+<pre><code>smart-power/
+├── apps/
+│   ├── twin-screen/
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   ├── pages/
+│   │   │   │   ├── overview/
+│   │   │   │   ├── protection/
+│   │   │   │   ├── station/
+│   │   │   │   ├── device/
+│   │   │   │   └── alarms/
+│   │   │   ├── components/
+│   │   │   │   ├── panels/
+│   │   │   │   ├── charts/
+│   │   │   │   └── scene-ui/
+│   │   │   ├── hooks/
+│   │   │   └── stores/
+│   │   └── package.json
+│   │
+│   ├── admin-web/
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   ├── layouts/
+│   │   │   ├── pages/
+│   │   │   │   ├── assets/
+│   │   │   │   ├── topology/
+│   │   │   │   ├── monitoring/
+│   │   │   │   ├── protection/
+│   │   │   │   ├── alarms/
+│   │   │   │   ├── work-orders/
+│   │   │   │   ├── scenes/
+│   │   │   │   └── system/
+│   │   │   └── router/
+│   │   └── package.json
+│   │
+│   └── api-server/
+│       ├── src/
+│       │   ├── modules/
+│       │   │   ├── auth/
+│       │   │   ├── users/
+│       │   │   ├── assets/
+│       │   │   ├── topology/
+│       │   │   ├── telemetry/
+│       │   │   ├── alarms/
+│       │   │   ├── protection/
+│       │   │   ├── work-orders/
+│       │   │   └── scenes/
+│       │   ├── common/
+│       │   ├── infrastructure/
+│       │   └── main.ts
+│       └── package.json
+│
+├── packages/
+│   ├── twin-engine/
+│   │   └── src/
+│   │       ├── core/
+│   │       ├── camera/
+│   │       ├── scenes/
+│   │       ├── layers/
+│   │       ├── models/
+│   │       ├── effects/
+│   │       ├── interactions/
+│   │       └── bindings/
+│   ├── api-client/
+│   ├── power-types/
+│   ├── ui-components/
+│   ├── shared-utils/
+│   └── eslint-config/
+│
+├── tooling/
+│   ├── model-converter/
+│   └── mock-telemetry/
+│
+├── database/
+│   ├── migrations/
+│   ├── seed/
+│   └── schemas/
+│
+├── assets/
+│   ├── city/
+│   ├── expo/
+│   ├── stations/
+│   └── equipment/
+│
+├── infra/
+│   ├── compose.yaml
+│   ├── nginx/
+│   └── scripts/
+│
+├── docs/
+│   ├── architecture/
+│   ├── api/
+│   ├── database/
+│   ├── scene-spec/
+│   └── testing/
+│
+├── pnpm-workspace.yaml
+├── turbo.json
+├── package.json
+├── .env.example
+└── README.md
+</code></pre>
+<h3>8.2 Workspace 配置</h3>
+<pre><code>packages:
+  - &quot;apps/*&quot;
+  - &quot;packages/*&quot;
+  - &quot;tooling/*&quot;
+</code></pre>
+<p>pnpm Workspace 支持在单一仓库中管理多个项目，并通过 <code>workspace:</code> 协议引用内部包。</p>
+<h3>8.3 依赖方向约束</h3>
+<div class="diagram"><div class="diagram-title">架构图 / 流程图源代码（Mermaid）</div><pre>flowchart TD
+    SCREEN[&quot;twin-screen&quot;] --&gt; ENGINE[&quot;twin-engine&quot;]
+    SCREEN --&gt; API[&quot;api-client&quot;]
+    SCREEN --&gt; UI[&quot;ui-components&quot;]
+    ADMIN[&quot;admin-web&quot;] --&gt; API
+    ADMIN --&gt; UI
+    ENGINE --&gt; TYPES[&quot;power-types&quot;]
+    API --&gt; TYPES
+    BACKEND[&quot;api-server&quot;] --&gt; TYPES
+    UI --&gt; TYPES
+    TYPES --&gt; UTILS[&quot;shared-utils&quot;]
+</pre></div>
+<p><code>power-types</code> 只放共享 DTO、枚举和基础类型，不导入 React、Cesium 或 NestJS。<code>twin-engine</code> 不导入页面组件和后端业务模块。<code>api-server</code> 不依赖任何前端应用。</p>
+<p>这样每个应用都可以独立构建、测试和部署。</p>
+<h3>8.4 环境与部署</h3>
+<table>
+<thead>
+<tr>
+  <th>环境</th>
+  <th>用途</th>
+  <th>部署方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Local</td>
+  <td>本地开发</td>
+  <td>Vite + NestJS + Docker 数据库</td>
+</tr>
+<tr>
+  <td>Dev</td>
+  <td>功能联调</td>
+  <td>Docker Compose</td>
+</tr>
+<tr>
+  <td>Staging</td>
+  <td>场景及业务验收</td>
+  <td>独立数据库、测试模型与模拟数据</td>
+</tr>
+<tr>
+  <td>Production</td>
+  <td>后续正式部署</td>
+  <td>HTTPS、备份、监控、审计、安全隔离</td>
+</tr>
+</tbody>
+</table>
+<p>Nginx 建议使用统一域名下的路径：</p>
+<pre><code class="language-text">/             -&gt; 三维指挥大屏
+/admin/       -&gt; 业务管理后台
+/api/v1/      -&gt; NestJS REST API
+/ws/          -&gt; WebSocket
+/assets/      -&gt; 公开授权的静态模型资源
+</code></pre>
+<p>正式系统中，模型存储、数据库和内部管理接口不应直接暴露到公网。模拟采集和真实采集必须使用不同的环境配置与明确的身份隔离。</p>
+<hr />
+<h2>九、12 周开发计划与每周验收标准</h2>
+<p>按 3–5 人并行开发估算，推荐 <strong>12 周完成 MVP</strong>。如果主要由一名开发者完成，周期通常会明显延长。</p>
+<pre><code>  阶段一：工程底座与三维场景
+  W1–W3
+
+
+  **W1**Monorepo、工程规范、Docker 数据库、NestJS、登录与 RBAC、Swagger。
+  **W2**Cesium 初始化、上海场景、会展中心模型、基础相机及图层。
+  **W3**供电线路、POI、设备模型、点击选中、镜头飞行与场景切换。
+
+**里程碑 M1：** 能从城市全景进入会展中心，选中变电站和设备；模型正确加载、镜头正常复位，没有明显资源泄漏。
+
+
+
+  阶段二：资产、拓扑与保电业务
+  W4–W6
+
+
+  **W4**资产、区域、线路数据库与 CRUD 页面；场景资产绑定 API。
+  **W5**电网拓扑、连接查询、拓扑图、路径高亮及场景联动。
+  **W6**保电活动、保障区域、重要设备绑定、任务详情和三维专题切换。
+
+**里程碑 M2：** 在后台新建一台模拟设备并绑定三维对象后，大屏可查看其详情；创建保电活动后，大屏能按活动加载目标资产。
+
+
+
+  阶段三：实时监测、告警与工单
+  W7–W9
+
+
+  **W7**模拟遥测生成器、历史数据写入、实时监测 API、WebSocket 与曲线。
+  **W8**告警规则、告警生成、自动定位、告警状态流转。
+  **W9**工单创建、指派、处理、复核、关闭及操作日志。
+
+**里程碑 M3：** 模拟设备温度超限后，自动生成告警，三维镜头定位故障设备，运维人员能够完成工单处理与复核。
+
+
+
+  阶段四：视觉优化与正式验收
+  W10–W12
+
+
+  **W10**大屏数据面板、灯光与线路特效、视频关键镜头复刻、巡航演示。
+  **W11**单元与集成测试、接口压测、三维性能分析、权限和异常处理。
+  **W12**部署、备份、操作手册、测试报告、演示脚本、最终验收。
+
+**里程碑 M4：** 在验收环境完整走通保电业务闭环，并完成视频指定核心画面的视觉对比。</code></pre>
+<h3>9.1 每周交付明细</h3>
+<table>
+<thead>
+<tr>
+  <th>周次</th>
+  <th>前端交付</th>
+  <th>后端 / 数据交付</th>
+  <th>验收方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>W1</td>
+  <td>两套应用能启动和登录</td>
+  <td>认证、权限、DB、Swagger</td>
+  <td>登录及权限测试</td>
+</tr>
+<tr>
+  <td>W2</td>
+  <td>城市与会展中心三维场景</td>
+  <td>场景数据配置</td>
+  <td>模型截图对比</td>
+</tr>
+<tr>
+  <td>W3</td>
+  <td>线路、POI、相机交互</td>
+  <td>场景对象 API</td>
+  <td>点击与飞行测试</td>
+</tr>
+<tr>
+  <td>W4</td>
+  <td>资产列表、详情、编辑</td>
+  <td>资产 CRUD、空间查询</td>
+  <td>新建资产可在三维显示</td>
+</tr>
+<tr>
+  <td>W5</td>
+  <td>拓扑图与供电路径面板</td>
+  <td>拓扑查询及路径分析</td>
+  <td>正常路径与断开路径测试</td>
+</tr>
+<tr>
+  <td>W6</td>
+  <td>保电活动配置与专题</td>
+  <td>保电模型及关联接口</td>
+  <td>任务与三维对象联动</td>
+</tr>
+<tr>
+  <td>W7</td>
+  <td>运行曲线、实时状态</td>
+  <td>模拟遥测、Redis、WS</td>
+  <td>实时刷新与断线恢复</td>
+</tr>
+<tr>
+  <td>W8</td>
+  <td>告警列表、告警高亮</td>
+  <td>告警规则与状态机</td>
+  <td>超阈值触发、恢复</td>
+</tr>
+<tr>
+  <td>W9</td>
+  <td>工单列表与处理流程</td>
+  <td>工单事务、审计日志</td>
+  <td>工单状态闭环</td>
+</tr>
+<tr>
+  <td>W10</td>
+  <td>高保真大屏与巡航</td>
+  <td>大屏聚合统计</td>
+  <td>关键帧视觉验收</td>
+</tr>
+<tr>
+  <td>W11</td>
+  <td>性能、异常及交互优化</td>
+  <td>自动化测试与压测</td>
+  <td>测试报告</td>
+</tr>
+<tr>
+  <td>W12</td>
+  <td>完整演示与部署</td>
+  <td>数据备份、部署文档</td>
+  <td>UAT 验收签署</td>
+</tr>
+</tbody>
+</table>
+<h3>9.2 开发优先级</h3>
+<pre><code>**P0 必须完成**
+MVP 验收范围
+
+
+
+
+setChecked(old=&gt;v?[...old,i]:old.filter(x=&gt;x!==i))}&gt;{task}
+
+
+
+  P0 完成度
+  {checked.length}/{p0.length}
+
+
+  </code></pre>
+<p>P1 放到 MVP 主流程完成以后，包括精细设备拆解、复杂镜头编排、Excel 批量导入、历史事件回放和自动报表。P2 再考虑可视化场景编辑器、移动端、AI 故障分析和真实电力系统集成。</p>
+<hr />
+<h2>十、关键验收测试方案</h2>
+<h3>10.1 核心端到端测试场景</h3>
+<p>E2E-001：变压器温度异常处置
+全流程自动化测试用例，采用可重复的模拟数据。</p>
+<pre><code>管理员创建“进博会保电活动”，绑定国家会展中心及相关模拟配电资产。
+指挥大屏选择该活动，正确显示场馆、设备、线路及实时监测面板。
+模拟器将指定设备的温度测点调整到超过告警阈值。
+告警服务生成唯一有效告警，并通过 WebSocket 通知大屏。
+三维场景切换到对应配电房，聚焦设备并显示告警高亮。
+运维主管创建工单并指派人员，运维人员提交模拟处理记录。
+模拟遥测值恢复正常，告警清除；工单经人工复核后关闭。
+系统保留完整告警、监测历史、状态变化和操作审计记录。</code></pre>
+<h3>10.2 非功能验收指标</h3>
+<table>
+<thead>
+<tr>
+  <th>测试维度</th>
+  <th>建议验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>页面功能</td>
+  <td>P0 功能用例通过率 100%</td>
+</tr>
+<tr>
+  <td>安全权限</td>
+  <td>未授权访问拒绝；敏感操作有审计记录</td>
+</tr>
+<tr>
+  <td>业务接口</td>
+  <td>标准查询在测试数据规模下 P95 小于 500ms</td>
+</tr>
+<tr>
+  <td>遥测推送</td>
+  <td>模拟数据更新至页面展示 P95 小于 1s</td>
+</tr>
+<tr>
+  <td>三维渲染</td>
+  <td>目标测试机常用镜头 ≥30 FPS</td>
+</tr>
+<tr>
+  <td>场景切换</td>
+  <td>缓存命中情况下 3s 内完成主要内容展示</td>
+</tr>
+<tr>
+  <td>稳定性</td>
+  <td>连续巡航 2 小时无崩溃或持续性内存泄漏</td>
+</tr>
+<tr>
+  <td>数据一致性</td>
+  <td>资产、模型、测点、告警均能通过 ID 关联</td>
+</tr>
+<tr>
+  <td>异常处理</td>
+  <td>后端重启或 WS 断连后客户端能够恢复</td>
+</tr>
+<tr>
+  <td>部署</td>
+  <td>全新测试环境可根据 README 完成部署和数据初始化</td>
+</tr>
+</tbody>
+</table>
+<p>需要单独记录测试硬件、浏览器、网络条件和模型大小，否则这些性能数值无法形成可重复的验收依据。</p>
+<h2>十一、关键技术风险与处理策略</h2>
+<table>
+<thead>
+<tr>
+  <th>风险</th>
+  <th>影响</th>
+  <th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>上海城市三维模型不足</td>
+  <td>画面与视频差异较大</td>
+  <td>先完成会展中心及重点区域；确认模型许可与坐标</td>
+</tr>
+<tr>
+  <td>设备资产与模型无法匹配</td>
+  <td>点击不能显示正确数据</td>
+  <td>统一 assetId、模型绑定表</td>
+</tr>
+<tr>
+  <td>电气拓扑过度简化</td>
+  <td>路径分析不准确</td>
+  <td>引入连接节点、开关状态、拓扑版本</td>
+</tr>
+<tr>
+  <td>大量标签、线路影响帧率</td>
+  <td>场景卡顿</td>
+  <td>聚合、视域裁剪、Primitive、LOD</td>
+</tr>
+<tr>
+  <td>模拟数据不稳定</td>
+  <td>告警演示不可重复</td>
+  <td>可配置模拟场景、固定随机种子、事件脚本</td>
+</tr>
+<tr>
+  <td>功能范围持续扩张</td>
+  <td>开发周期失控</td>
+  <td>固定 P0，新增功能走变更流程</td>
+</tr>
+<tr>
+  <td>三维与后台重复实现逻辑</td>
+  <td>后期维护复杂</td>
+  <td>统一 API、类型及业务状态</td>
+</tr>
+<tr>
+  <td>不合规的真实电网接入</td>
+  <td>安全和项目合规风险</td>
+  <td>MVP 完全隔离模拟数据；真实接入另行设计和审批</td>
+</tr>
+</tbody>
+</table>
+<h2>十二、第一版示例数据规模</h2>
+<p>建议先准备一个<strong>可重复运行的进博会保电示例数据集</strong>。以下为开发目标数量，并非对真实进博会电网规模的描述。</p>
+<table>
+<thead>
+<tr>
+  <th>数据类型</th>
+  <th style="text-align:right">第一版数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>上海城市主场景</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td>国家会展中心重点场景</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td>变电站及配电房精细场景</td>
+  <td style="text-align:right">3</td>
+</tr>
+<tr>
+  <td>变电站 / 配电房模拟资产</td>
+  <td style="text-align:right">12</td>
+</tr>
+<tr>
+  <td>电气设备模拟资产</td>
+  <td style="text-align:right">300</td>
+</tr>
+<tr>
+  <td>供电线路</td>
+  <td style="text-align:right">120</td>
+</tr>
+<tr>
+  <td>电力监测点</td>
+  <td style="text-align:right">800</td>
+</tr>
+<tr>
+  <td>保电活动</td>
+  <td style="text-align:right">3</td>
+</tr>
+<tr>
+  <td>告警规则</td>
+  <td style="text-align:right">20</td>
+</tr>
+<tr>
+  <td>可复现故障案例</td>
+  <td style="text-align:right">10</td>
+</tr>
+<tr>
+  <td>自动巡航镜头</td>
+  <td style="text-align:right">8–12</td>
+</tr>
+</tbody>
+</table>
+<p>这套数据足够测试模型拾取、路径追踪、页面布局、实时推送和工单闭环，无需一开始接入全上海真实电网数据。</p>
+<hr />
+<h2>十三、项目最终交付物</h2>
+<table>
+<thead>
+<tr>
+  <th>交付物</th>
+  <th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>twin-screen</code></td>
+  <td>可运行三维指挥大屏</td>
+</tr>
+<tr>
+  <td><code>admin-web</code></td>
+  <td>综合业务管理后台</td>
+</tr>
+<tr>
+  <td><code>api-server</code></td>
+  <td>统一业务 REST / WebSocket 后端</td>
+</tr>
+<tr>
+  <td><code>twin-engine</code></td>
+  <td>可复用 Cesium 三维 SDK</td>
+</tr>
+<tr>
+  <td><code>database</code></td>
+  <td>数据结构、迁移及初始化脚本</td>
+</tr>
+<tr>
+  <td><code>model-assets</code></td>
+  <td>场馆、设备和线路模型配置</td>
+</tr>
+<tr>
+  <td><code>seed-data</code></td>
+  <td>模拟资产、测点、保电任务</td>
+</tr>
+<tr>
+  <td><code>mock-telemetry</code></td>
+  <td>实时数据和故障模拟器</td>
+</tr>
+<tr>
+  <td><code>api-docs</code></td>
+  <td>Swagger / OpenAPI</td>
+</tr>
+<tr>
+  <td><code>deploy</code></td>
+  <td>Docker Compose、Nginx 与环境配置</td>
+</tr>
+<tr>
+  <td><code>test-reports</code></td>
+  <td>功能、性能及 E2E 测试报告</td>
+</tr>
+<tr>
+  <td><code>README</code></td>
+  <td>本地启动、部署、使用说明</td>
+</tr>
+</tbody>
+</table>
+<h2>十四、开发实施总结</h2>
+<p>最终推荐架构</p>
+<pre><code>**前端系统**三维指挥大屏 + 综合业务后台
+**后端服务**1 个 NestJS 模块化单体 + 模拟采集器
+**三维底座**CesiumJS + 独立 Twin Engine SDK
+**业务模块**资产、拓扑、监测、保电、告警工单、场景
+**数据库**PostgreSQL / PostGIS + Redis + MinIO
+**研发方式**pnpm Monorepo + 前后端共享 TypeScript 类型
+**实施周期**12 周参考计划（3–5 人并行）</code></pre>
+<p>这个项目最合理的起点不是同时开发全部 23 个后台页面，而是先完成一个纵向业务切片：</p>
+<p><strong>在后台创建一个变电站 → 绑定三维模型 → 配置监测点 → 产生模拟告警 → 三维自动定位 → 创建并完成工单。</strong></p>
+<p>一旦这条链路真正跑通，剩余的资产类型、场景与业务页面大多都能沿用同一架构扩展。</p>
+<p>建议把这个纵向业务切片作为整个项目的第一个技术验收点，然后再投入大量精力复刻 RayData 的灯光、粒子、线路流光和镜头动画。这样最终得到的是一套有业务能力、可复用且便于持续扩展的数字孪生系统。</p>
+</div></article><article id="turn05"><div class="role">USER · 第 05 轮</div><div class="user">将整个对话保存成HTML + 图片，打包成zip压缩包</div><p>本次输出即为该请求的离线归档。包含首页、17 张关键帧、原 PRD HTML、方案 B 全文及图片资源。</p></article><section class="panel" id="files"><h2>压缩包文件结构</h2><pre>index.html
+images/
+  关键帧_01.jpg ～ 关键帧_17.jpg
+  power12.png / power36.png / power44.png / power_contact.jpg
+documents/
+  三维前端复刻需求文档.html
+  方案B_详细架构原文.txt
+README.txt
+</pre></section></main></div><footer class="foot">2026-11-04 · 上海进博会全景智慧电力保障系统 · 离线归档</footer></body></html>

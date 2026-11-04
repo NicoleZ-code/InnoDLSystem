@@ -1,0 +1,14 @@
+{
+  "name": "@innodl/mock-telemetry",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --import tsx server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.3",
+    "tsx": "^4.20.6",
+    "@innodl/power-types": "workspace:*",
+    "@innodl/shared-utils": "workspace:*"
+  }
+}
